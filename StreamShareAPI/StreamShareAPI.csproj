@@ -4,10 +4,19 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ce310ac3-5255-493e-a478-18ce798e287a</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.5" />
+    <PackageReference Include="MySql.Data" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>
